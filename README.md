@@ -4,27 +4,26 @@
 
 <table>
 <tr>
-<td>Anubhav Tiwari</td><td>Developer</td>
+<th>S/N</th><th>Name</th><th>Role</th>
 </tr>
 
 <tr>
-<td>Ayodeji Ejiade</td><td>UI/UX</td>
+<td>1.</td><td>Anubhav Tiwari</td><td>Developer</td>
 </tr>
 
 <tr>
-<td>Vaidehi Piyush Pandya</td><td>QA/Tester</td>
+<td>2.</td>Ayodeji Ejiade</td><td>UI/UX</td>
 </tr>
 
 <tr>
-<td>Zacharias E. Alaniz</td><td>Team Leader</td>
+<td>3.</td>Vaidehi Piyush Pandya</td><td>QA/Tester</td>
+</tr>
+
+<tr>
+<td>4.</td>Zacharias E. Alaniz</td><td>Team Leader</td>
 </tr>
 </table>
-S/N|Name                    |Responsibilities
----|------------------------|----------------
-1. |Anubhav Tiwari          |Developer
-2. |Ayodeji Ejiade          |UI/UX 
-3. |Vaidehi Piyush Pandya   |QA/Tester
-4. |Zacharias E. Alaniz     |Team Leader
+
 
 You can use the [editor on GitHub](https://github.com/ejiadedeji/SmartMirror/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
