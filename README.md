@@ -1,7 +1,7 @@
 ## Smart Mirror Sketch - Group 15
 
 ### Team Members & Responsibilites
-
+### Sketch
 <img src = "Images/picture_15.jpg">
 <caption>Anubhav Tiwari (Developer); Ayodeji Ejiade (UI/UX Developer); Zacharias E. Alaniz (Team Leader); Vaidehi Piyush Pandya (Developer/QA Tester)</caption>
 
