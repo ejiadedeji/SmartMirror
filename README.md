@@ -2,6 +2,8 @@
 
 ### Team Members & Responsibilites
 
+<img src = "Images/picture_15.jpg">
+
 <table>
 <tr>
 <th>S/N</th><th>Name</th><th>Role</th>
