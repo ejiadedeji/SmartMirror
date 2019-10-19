@@ -13,7 +13,35 @@
 5. Social Media, News Portal
 
 ### Implementation
+<table>
+<tr>
+<th>Phase</th><th>Status</th><th>Next Steps</th>
+</tr>
 
+<tr>
+<td>Requirement Gathering and Analysis</td><td></td><td></td>
+</tr>
+
+<tr>
+<td>Design</td><td></td><td></td>
+</tr>
+
+
+<tr>
+<td>Implementation or Coding</td><td></td><td></td>
+</tr>
+
+
+<tr>
+<td>Testing</td><td></td><td></td>
+</tr>
+
+<tr>
+<td>Deployment</td><td></td><td></td>
+</tr>
+
+
+</table>
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
