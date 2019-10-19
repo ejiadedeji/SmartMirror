@@ -1,6 +1,24 @@
 ## Smart Mirror Sketch - Group 15
 
 ### Team Members & Responsibilites
+
+<table>
+<tr>
+<td>Anubhav Tiwari</td><td>Developer</td>
+</tr>
+
+<tr>
+<td>Ayodeji Ejiade</td><td>UI/UX</td>
+</tr>
+
+<tr>
+<td>Vaidehi Piyush Pandya</td><td>QA/Tester</td>
+</tr>
+
+<tr>
+<td>Zacharias E. Alaniz</td><td>Team Leader</td>
+</tr>
+</table>
 S/N|Name                    |Responsibilities
 ---|------------------------|----------------
 1. |Anubhav Tiwari          |Developer
