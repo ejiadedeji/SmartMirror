@@ -12,15 +12,15 @@
 </tr>
 
 <tr>
-<td>2.</td>Ayodeji Ejiade</td><td>UI/UX</td>
+<td>2.</td><td>Ayodeji Ejiade</td><td>UI/UX</td>
 </tr>
 
 <tr>
-<td>3.</td>Vaidehi Piyush Pandya</td><td>QA/Tester</td>
+<td>3.</td><td>Vaidehi Piyush Pandya</td><td>QA/Tester</td>
 </tr>
 
 <tr>
-<td>4.</td>Zacharias E. Alaniz</td><td>Team Leader</td>
+<td>4.</td><td>Zacharias E. Alaniz</td><td>Team Leader</td>
 </tr>
 </table>
 
