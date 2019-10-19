@@ -14,8 +14,8 @@
 5. Social Media, News Portal
 
 ### Implementation
-<table>
-<tr class="success">
+<table width="800px">
+<tr>
 <th>Phase</th><th>Status</th><th>Next Steps</th>
 </tr>
 
