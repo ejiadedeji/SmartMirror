@@ -1,4 +1,11 @@
-## Welcome to GitHub Pages
+## Smart Mirror Sketch - Group 15
+
+### Team Members & Responsibilites
+S/N|Name                    |Responsibilities
+1. |Anubhav Tiwari          |Developer
+2. |Ayodeji Ejiade          |UI/UX 
+3. |Vaidehi Piyush Pandya   |QA/Tester
+4. |Zacharias E. Alaniz     |Team Leader
 
 You can use the [editor on GitHub](https://github.com/ejiadedeji/SmartMirror/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
