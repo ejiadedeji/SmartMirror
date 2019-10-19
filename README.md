@@ -2,6 +2,7 @@
 
 ### Team Members & Responsibilites
 S/N|Name                    |Responsibilities
+---|------------------------|----------------
 1. |Anubhav Tiwari          |Developer
 2. |Ayodeji Ejiade          |UI/UX 
 3. |Vaidehi Piyush Pandya   |QA/Tester
