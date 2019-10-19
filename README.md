@@ -5,34 +5,14 @@
 <img src = "Images/picture_15.jpg">
 <caption>Anubhav Tiwari (Developer); Ayodeji Ejiade (UI/UX Developer); Zacharias E. Alaniz (Team Leader); Vaidehi Piyush Pandya (Developer/QA Tester)</caption>
 
-<table>
-<tr>
-<th>S/N</th><th>Name</th><th>Role</th>
-</tr>
+### Main Functions:
+1. Facial Recognition
+2. Date/Time , Calendar /Events, Weather Data 
+3. Connecting to Smart Phone, Settings, Sleep and Health Data 
+4. Messaging, Email, Music , Google Maps
+5. Social Media, News Portal
 
-<tr>
-<td>1.</td><td>Anubhav Tiwari</td><td>Developer</td>
-</tr>
-
-<tr>
-<td>2.</td><td>Ayodeji Ejiade</td><td>UI/UX</td>
-</tr>
-
-<tr>
-<td>3.</td><td>Vaidehi Piyush Pandya</td><td>QA/Tester</td>
-</tr>
-
-<tr>
-<td>4.</td><td>Zacharias E. Alaniz</td><td>Team Leader</td>
-</tr>
-</table>
-
-
-You can use the [editor on GitHub](https://github.com/ejiadedeji/SmartMirror/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### Implementation
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
