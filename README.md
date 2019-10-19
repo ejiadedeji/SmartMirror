@@ -20,11 +20,11 @@
 </tr>
 
 <tr>
-<td>Requirement Gathering and Analysis</td><td></td><td></td>
+<td>Requirement Gathering and Analysis</td><td>Completed</td><td></td>
 </tr>
 
 <tr>
-<td>Design</td><td></td><td></td>
+<td>Design</td><td>Completed</td><td></td>
 </tr>
 
 
