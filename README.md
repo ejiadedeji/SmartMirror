@@ -15,7 +15,7 @@
 
 ### Implementation
 <table>
-<tr>
+<tr class="success">
 <th>Phase</th><th>Status</th><th>Next Steps</th>
 </tr>
 
