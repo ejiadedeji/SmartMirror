@@ -1,4 +1,4 @@
-## Smart Mirror Sketch - Group 15
+## Smart Mirror Design - Group 15
 
 ### Team Members & Responsibilites
 ### Sketch
