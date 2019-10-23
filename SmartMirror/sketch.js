@@ -28,6 +28,6 @@ function draw() {
   
   //filter(INVERT);
 }
-function mouseClicked() { 
-    save('cap.png');
-} 
+//function mouseClicked() { 
+//    save('cap.png');
+//} 
