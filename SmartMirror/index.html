@@ -1,39 +1,129 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
     <title>Group 15 - Smart Mirror</title>
-    <style> body {padding: 0; margin: 0;} </style>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <!--<script src="https://code.jquery.com/jquery-2.1.3.min.js" crossorigin="anonymous"></script>-->
+    <!--This structure really matters. For the below 3 lines-->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+
+    <script src="app.js" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script src="p5.js"></script>
     <script src="p5.sound.js"></script>
-    <script src="sketch.js"></script>
-  </head>
-  <body>
- 
-  <nav class="navbar fixed-bottom navbar-light bg-light">
-  <a class="navbar-brand" href="http://www.youtube.com/watch?v=6w4FI0Jq0lI" data-width="640" data-height="360">
-    <img src="Images/media.png" alt="">
-  </a>
+
+    <script src="sketch.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.js'></script>
+    <!--<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.jQueryUI.min.js'></script>-->
 
 
-      
-      
-<a class="navbar-brand right" href="#">
-    <img src="Images/notification.png" alt="">
-      </a>
-</nav>
 
-      
-<style type="text/css">
-    body {
-        overflow: hidden;
-    }
-</style>   
-      
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+
+    <!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">-->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+
+
+
+
+
+    <nav class="navbar fixed-bottom navbar-transparent bg-transparent">
+        <a class="navbar-brand" href="#" data-width="640" data-height="360">
+            <img src="Images/music-player.png" alt="" onclick="showMusic()">
+        </a>
+        <a class="navbar-brand" href="#" data-width="640" data-height="360">
+            <img src="Images/yt.png" alt="" onclick="showDiv()">
+        </a>
+        <a class="navbar-brand centre" href="#" data-width="340" data-height="360">
+            <img src="Images/camera.png" alt="" id="self" onclick="selfieCapture()">
+        </a>
+        <a class="navbar-brand right" href="#">
+            <img src="Images/notification.png" alt="">
+        </a>
+    </nav>
+
+
+    <!--<style type="text/css">
+
+        body {
+            overflow: hidden;
+        }
+    </style>-->
+
+  
+    
+    
+
+    <div class="grid-stack">
+        <div class="grid-stack-item"
+             data-gs-x="0" data-gs-y="6"
+             data-gs-width="4" data-gs-height="2">
+            <div class="grid-stack-item-content">
+                <iframe id="spotify" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX44t7uCdkV1A" display="none" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <button class="dragIcon">Drag here</button>
+
+            </div>
+        </div>
+        <div class="grid-stack-item"
+             data-gs-x="0" data-gs-y="0"
+             data-gs-width="4" data-gs-height="10">
+            <div class="grid-stack-item-content">
+                    <div id="Youtube" class="row navi infoi" position="absolute" bottom="0" left="0" style='display:none' bg-transparent>
+        <div class="col-md-12" id="parent">
+            <form action="#">
+                <!--<p><input type="text" id="search" placeholder="Search" autocomplete="off" class="form-control" /></p>
+                -->
+                <div class="col-md-10">
+                <input type="text" class="form-control" id="search" placeholder="Search" autocomplete="off" class="form-control"/>
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                <!--<p><input type="submit" value="Search" class="form-control btn btn-primary w100"></p>-->
+                </div>
+                <div id="results" class="col-md-8" id="child"></div>
+            </form>
+            
+        </div>
+    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            var options = {
+                cellHeight: 80,
+                verticalMargin: 10
+            };
+            $('.grid-stack').gridstack(options);
+        });
+    </script>
+
+</body>
 </html>
+
+

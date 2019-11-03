@@ -1,0 +1,38 @@
+﻿body {
+    background: #ffffff;
+    
+}
+header {
+    margin-top: 30px;
+    
+}
+    header a {
+        color: black;
+        text-decoration: none;
+        
+    }
+        header a:hover {
+            text-decoration: none;
+            
+        }
+form { margin-top: 20px; }
+form, #results { padding: 0 20px; }
+.item { margin-bottom: 25px; }
+.item h6{
+    
+} 
+.w100 { width: 100%; }
+
+.btn-primary { background: #952b2b; border-color: #957575; }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #782b2b;  border-color: #952b2b; }
+
+.grid-stack{
+    position: absolute;
+    width: 100%;
+    overflow:auto;
+    height: 100%;
+}
+.grid-stack-item-content{
+overflow: hidden !important;
+height: 100%;
+}
