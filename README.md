@@ -34,7 +34,7 @@
 
 
 <tr>
-<td>Testing</td><td></td>In Progress<td></td>
+<td>Testing</td>In Progress<td></td><td></td>
 </tr>
 
 <tr>
