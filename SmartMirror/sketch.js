@@ -25,6 +25,7 @@ stroke(192,192,192,100);
 function selfieCapture() { 
 save('cap.png');
 }
+<<<<<<< HEAD
 
 function showMusic() {
 
@@ -38,3 +39,8 @@ function showMusic() {
 
 
 
+=======
+//function mouseClicked() { 
+//    save('cap.png');
+//} 
+>>>>>>> b13a7b43ec2e4dd7d35febe81cc615573710287d
