@@ -29,16 +29,16 @@
 
 
 <tr>
-<td>Implementation or Coding</td><td></td><td></td>
+<td>Implementation or Coding</td><td>Working</td><td></td>
 </tr>
 
 
 <tr>
-<td>Testing</td><td></td><td></td>
+<td>Testing</td>In Progress<td></td><td></td>
 </tr>
 
 <tr>
-<td>Deployment</td><td></td><td></td>
+<td>Deployment</td><td></td>TBA<td></td>
 </tr>
 
 
