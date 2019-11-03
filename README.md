@@ -20,25 +20,25 @@
 </tr>
 
 <tr>
-<td>Requirement Gathering and Analysis</td><td>Completed</td><td></td>
+<td>Requirement Gathering and Analysis</td><td>Completed</td><td>Design</td>
 </tr>
 
 <tr>
-<td>Design</td><td>Completed</td><td></td>
-</tr>
-
-
-<tr>
-<td>Implementation or Coding</td><td>Working</td><td></td>
+<td>Design</td><td>Completed</td><td>Implementation or Coding</td>
 </tr>
 
 
 <tr>
-<td>Testing</td>In Progress<td></td><td></td>
+<td>Implementation or Coding</td><td> In progress</td><td>Testing</td>
+</tr>
+
+
+<tr>
+<td>Testing</td><td>In progress</td><td>Deployment</td>
 </tr>
 
 <tr>
-<td>Deployment</td><td></td>TBA<td></td>
+<td>Deployment</td><td>TBA</td><td>Presentation</td>
 </tr>
 
 
