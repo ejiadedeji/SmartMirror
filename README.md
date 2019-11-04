@@ -5,7 +5,7 @@
 <img src = "Images/picture_15.jpg">
 <caption>Anubhav Tiwari (Developer); Ayodeji Ejiade (UI/UX Developer); Zacharias E. Alaniz (Team Leader); Vaidehi Piyush Pandya (Developer/QA Tester)</caption>
 
-<img src = "Images/p1.15.png">
+
 ### Main Functions:
 1. Facial Recognition
 2. Date/Time , Calendar /Events, Weather Data 
