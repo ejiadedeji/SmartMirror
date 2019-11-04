@@ -64,3 +64,13 @@
 * Familar with smart devices 
 * task oriented
 - - - -
+### The Actions of the Smart mirror
+* Watching youtube videos 
+* Displays current location weather
+* Plays a streaming music platform 
+* Tells the time and Date
+* Taking selfies 
+- - - - 
+Screen shot of mirror to explain the mapping and the actions performed
+- - - - 
+Demo
