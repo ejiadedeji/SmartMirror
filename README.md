@@ -5,14 +5,6 @@
 <img src = "Images/picture_15.jpg">
 <caption>Anubhav Tiwari (Developer); Ayodeji Ejiade (UI/UX Developer); Zacharias E. Alaniz (Team Leader); Vaidehi Piyush Pandya (Developer/QA Tester)</caption>
 
-
-### Main Functions:
-1. Facial Recognition
-2. Date/Time , Calendar /Events, Weather Data 
-3. Connecting to Smart Phone, Settings, Sleep and Health Data 
-4. Messaging, Email, Music , Google Maps
-5. Social Media, News Portal
-
 ### Implementation
 <table width="100%">
 <tr>
