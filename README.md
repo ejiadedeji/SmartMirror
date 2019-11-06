@@ -3,7 +3,7 @@
 ### Team Members & Responsibilites
 ### Sketch
 <img src = "group15.jpg">
-<caption>Anubhav Tiwari (Developer); Ayodeji Ejiade (UI/UX Developer); Zacharias E. Alaniz (Team Leader); Vaidehi Piyush Pandya (Developer/QA Tester)</caption>
+<caption>Anubhav Tiwari (Developer); Ayodeji Ejiade (UI/UX Developer); Zacharias E. Alaniz (Team Leader); Vaidehi Piyush Pandya (Developer/QA Tester) Aneesha Baby(Developer)</caption>
 
 ### Implementation
 <table width="100%">
