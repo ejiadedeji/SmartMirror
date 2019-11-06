@@ -65,5 +65,36 @@
 - - - - 
 Final Design:
 <img src = "Group15_Main.png">
-- - - - 
+- - - -
+Functionalities Implemented:
+
+1. Lock Screen
+2. Mirror using Video capture in p5.js
+3. Weather
+4. Calender
+5. Youtube
+6. Spotify/ Music Player
+7. Selfie
+8. Google Fit
+9. Drag Drop
+10. Geo Locations
+
+IDE Used:
+Webstrom, p5.js web editor, p5.js desktop editor, Visual Studio, Sublime
+
+Programming Languages:
+Javascript, p5.js, html,css, jquery, ajax
+
+Rerences:
+https://p5js.org/
+https://darksky.net/dev
+https://openweathermap.org/api
+https://support.google.com/youtube/answer/171780?hl=en
+https://gridstackjs.com/
+https://newsroom.spotify.com/2018-09-04/how-to-embed-spotifys-play-button/
+
+THANK YOU
+
+
+- - - -
 Demo
