@@ -63,6 +63,7 @@
 * Tells the time and Date
 * Taking selfies 
 - - - - 
-Screen shot of mirror to explain the mapping and the actions performed
+Final Design:
+<img src = "Group15_Main.png">
 - - - - 
 Demo
