@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Group 15</title>
+    <link rel="stylesheet" href="https://bootswatch.com/3/paper/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.0/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.all.js"></script>
+    <script src="app.js" crossorigin="anonymous"></script>
+    <script defer src="https://apis.google.com/js/client.js?onload=init" onload="this.onload=function(){};handleClientLoad();" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+<!--        <div class="col-sm-12 well"  style="background-color: black; height: 100vh;">-->
+            <div class="col-sm-12 well" style="background-color: black; height: 80vh;">
+
+
+                <!-- gridstack.js elements go here -->
+                <div class="grid-stack">
+                    <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="2" data-gs-height="2">
+                        <div class="grid-stack-item-content panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Widget 1</h3>
+                            </div>
+                            <div class=panel-body">
+                                content here
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="grid-stack-item" data-gs-x="9" data-gs-y="0" data-gs-width="3" data-gs-height="6">
+                        <div class="grid-stack-item-content panel panel-success">
+
+                                <iframe id = "myFrame" src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZmluZGFtaXRiQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;showTitle=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0" style="border-width:0;background-color: transparent;" width="250" height="250" frameborder="0" scrolling="no"
+                                ></iframe>
+                                <button id="authorize_button" style="display: none;">Authorize</button>
+                                <button id="signout_button" style="display: none;">Sign Out</button>
+                                <pre id="content" style="white-space: pre-wrap;"></pre>
+
+
+
+                                <pre id="content" style="white-space: pre-wrap;"></pre>
+                        </div>
+                    </div>
+
+
+<!--                    <div class="grid-stack-item" data-gs-x="2" data-gs-y="0" data-gs-width="6" data-gs-height="2">-->
+<!--                        <div class="grid-stack-item-content panel panel-success">-->
+<!--                            <div class="panel-heading">-->
+<!--                                <h3 class="panel-title">Widget 22</h3>-->
+<!--                            </div>-->
+<!--                            <div class=panel-body">-->
+
+<!--                                <button id="authorize_button" style="display: block;">Authorize</button>-->
+<!--                                <button id="signout_button" style="display: none;">Sign Out</button>-->
+
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+
+
+
+<!--                    <div class="grid-stack-item" data-gs-x="9" data-gs-y="0" data-gs-width="3" data-gs-height="2">-->
+<!--                        <div class="grid-stack-item-content panel panel-success">-->
+<!--                            <div class="panel-heading">-->
+<!--                                <h3 class="panel-title">Calendar</h3>-->
+<!--                        <div class=panel-body">-->
+<!--                        <iframe id = "myFrame" src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZmluZGFtaXRiQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;showTitle=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0" style="border-width:0;background-color: transparent;" width="250" height="250" frameborder="0" scrolling="no"-->
+<!--                        ></iframe>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                        </div>-->
+
+
+                    <div class="grid-stack-item" data-gs-x="0" data-gs-y="6" data-gs-width="3" data-gs-height="2">
+                        <div class="grid-stack-item-content panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Music</h3>
+                            </div>
+                            <div class=panel-body">
+                                <iframe id="spotify" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX44t7uCdkV1A" display="none" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-stack-item" data-gs-x="0" data-gs-y="2" data-gs-width="4" data-gs-height="4">
+                        <div class="grid-stack-item-content panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Google Fit</h3>
+                            </div>
+                            <div class=panel-body" id="gfit">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!--                </div>-->
+            </div>
+    </div>
+        <div class="col-sm-12 well" style="height: 64px">
+        <div class="col-sm-4"><img src = "Images/music-player.png" ><img src = "Images/yt.png"></div><div class="col-sm-4" style="text-align: center"><img src = "Images/camera.png" height="32px"></div><div class="col-sm-4" id = "news"></div>
+        </div>
+</div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('.grid-stack').gridstack();
+    });
+</script>
+
+
+
+
+
+    <script src="calendar.js"></script>
+    <script src="google.js"></script>
+
+</body>
+
+</html>
+

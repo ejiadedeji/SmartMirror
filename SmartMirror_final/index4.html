@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.0/lodash.min.js"></script>
+    <script src="app.js" crossorigin="anonymous"></script>
+    <script defer src="https://apis.google.com/js/client.js?onload=init" onload="this.onload=function(){};handleClientLoad();" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+    <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+  return t;
+}(document, "script", "twitter-wjs"))
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Mirror</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+
+        body {
+            overflow: hidden;
+        }
+        #calendar { width: 300px; height: 300px; padding: 0.5em; border: 0; float:right; color: white; left: 75%;background: #0000002e}
+        #news { width: 350px; height: 90px; padding: 0.5em; border: 0; color: white;top: 75%;background: #0000002e }
+        #youtube { width: 300px; height: 150px; padding: 0.5em; border: 0; color: white; display: none; top:300px; float:right }
+        #curr_weather { width: 50%; border: 0; color: white; top:0; float:right; }
+        #music { width: 300px; height: 120px; padding: 0.5em; border: 0; top:60%; color: white;left: 75%;background: #0000002e }
+        #twitter{ width: 335px; height: 300px; padding: 0.5em; border: 0; top:0.5%; color: white;left: 50%;background: #0000002e;overflow-y: scroll; display: none;}
+        .ui-widget-content {background-color: transparent; color: white;position: absolute;}
+        .ui-widget-header {background-color: black; width:100%; color: white}
+        #DateTime { width: 350px; height: 180px; padding: 0.5em; border: 0; color: white ; top:0;background: #0000002e}
+        #weather { width: 100%; height: 50%;border: 0; color: white; top:-10px; float:right }
+        #weather_h { width: 100%; height: 50%; padding: 0.5em; border: 0;left: -5px; color: white; margin-top:15%; float:right }
+
+        #gfit {
+            color: white;
+            /*opacity: 0.5;*/
+            top: 200px;
+            background: #0000002e;
+            position: absolute; /* Position them relative to the browser window */
+            left: -230px; /* Position them outside of the screen */
+            transition: 0.3s; /* Add transition on hover */
+            padding: 15px; /* 15px padding */
+            width: 250px; /* Set a specific width */
+            height: 250px;
+            text-decoration: none; /* Remove underline */
+            font-size: 20px; /* Increase font size */
+            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        }
+        #gfit:hover {
+            left: 0; /* On mouse-over, make the elements appear as they should */
+        }
+    </style>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
+
+
+    <script>
+        $( function() {
+            $( "#music" ).draggable();
+            $( "#twitter" ).draggable();
+            $( "#calendar" ).draggable();
+            $( "#news" ).draggable();
+            $( "#DateTime" ).draggable();
+            $( "#gfit" ).draggable();
+            /*$( "#curr_weather" ).draggable();
+            $( "#weather" ).draggable();
+            $( "#weather_h" ).draggable();*/
+            $( "#youtube" ).draggable();
+
+        } );
+    </script>
+</head>
+<body>
+
+<div id = "mirror" style="height:100vh; background-color: black">
+<div id="calendar" class="ui-widget-content col-sm-4">
+    <!--<div id="ui-widget-header"><h4>Calendar</h4></div>-->
+    <iframe id = "myFrame" src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZmluZGFtaXRiQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;showTitle=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0" style="border-width:0;background-color: transparent;" width="280" height="250" frameborder="0" scrolling="no"
+    ></iframe>
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+    <pre id="content" style="white-space: pre-wrap; color: white;background: #0000002e"></pre>
+
+</div>
+
+
+<div id="news" class="ui-widget-content">
+   <!-- <div id="ui-widget-header"><h4>News</h4></div>-->
+
+</div>
+
+    <div id="youtube" class="ui-widget-content">
+        <iframe left="10%" right="90%" src="https://www.youtube.com/embed/playlist?list=PLOGi5-fAu8bEzZbNHOB2-GqX1rOni7tQp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div id="gfit" class="ui-widget-content">
+        <div id="ui-widget-header"><h4>7 days Steps Data</h4></div>
+    </div>
+
+
+
+    <div id="DateTime" class="ui-widget-content">
+<!--
+        <div id="ui-widget-header"><h4>Date</h4></div>
+-->
+        <div id ="weather" class="ui-widget-content">
+        <div id = "time"></div>
+        <div id = "curr_weather"></div>
+    </div>
+    <div id = "weather_h" class="ui-widget-content">
+    </div>
+
+    </div>
+
+<div id="music" class="ui-widget-content">
+    <!--<div id="ui-widget-header"><h4>Music</h4></div>-->
+    <iframe id="spotify" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX44t7uCdkV1A" display="none" width="280" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+
+<div id ="twitter" class="ui-widget-content">
+    
+</div>
+
+
+        
+
+
+<nav class="navbar fixed-bottom navbar-transparent bg-transparent">
+    <div>
+    <a class="navbar-brand" href="#" data-width="640" data-height="360">
+        <img src="Images/yt.png" alt="" onclick="showDiv('youtube')">
+    </a>
+    </div>
+    
+<!--    <a class="navbar-brand" href="#" data-width="640" data-height="360">-->
+<!--        <img src="Images/yt.png" alt="" onclick="showDiv()">-->
+<!--    </a>-->
+    <div style="width: 0%;margin:auto;">
+    <a class="navbar-brand centre" href="#" data-width="340" data-height="360">
+        <img src="Images/camera.png" alt="" id="self" onclick="selfieCapture()">
+    </a>
+    </div>
+    <div>
+    <a class="navbar-brand right" href="#">
+        <img src="Images/twitter.png" style="height: 30px;"alt="" onclick="showDiv('twitter')">
+    </a>
+    </div>
+    <div>
+    <a class="navbar-brand right" href="#">
+        <img src="Images/music-player.png" alt="" onclick="showDiv('music')">
+    </a>
+    </div>
+</nav>
+</div>
+
+
+<script src="calendar.js"></script>
+<script src="google.js"></script>
+<script>
+function showDiv(elementID) {
+var x = document.getElementById(elementID);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+
+
+}
+displayTweet();
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="sketch_new.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.0/lodash.min.js"></script>
+    <script src="app.js" crossorigin="anonymous"></script>
+    <script defer src="https://apis.google.com/js/client.js?onload=init" onload="this.onload=function(){};handleClientLoad();" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Draggable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        .main{
+            height:60vh;width: 50vw;position: absolute;background: #0000002e;margin-left: 25%;margin-top: 10%;
+        }
+        .locked{
+            margin-left: 48%;
+            margin-right: 48%;
+            margin-top:5%
+        }
+        .lock_icon{
+            height:32px;
+        }
+        .date_and_time{
+            margin-left: 35%;
+        }
+        .time{
+            font-size: -webkit-xxx-large;
+            color: #ece4e4;
+        }
+        .date{
+            color: #ece4e4;
+            margin-left: 2%;
+        }
+        .google_button{
+            margin-top: 10%;
+            margin-left: 35%;
+        }
+        #authorize_button{
+                background: transparent;
+                font-size: medium;
+                color: #ece4e4;
+                border-width: 0.5px;
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+<div id = "mirror" style="height:100vh;">
+
+<div class = "main">
+    <div class = "locked"><img src = "icons/locked-padlock.png" class="lock_icon"></div>
+    <div class="date_and_time"></div>
+    <div class="google_button">
+        <button id="authorize_button" style="display: none;">Sign In to Smart Mirror with <img src="icons/google.png" class="g_icon"></button>
+        <button id="signout_button" style="display: none;">Sign Out</button>
+    </div>
+</div>
+
+        
+
+
+
+</div>
+
+
+<script src="calendar.js"></script>
+<script src="google.js"></script>
+
+</body>
+</html>
